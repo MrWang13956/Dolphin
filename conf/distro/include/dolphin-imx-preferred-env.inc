@@ -1,5 +1,5 @@
 PREFERRED_PROVIDER_virtual/bootloader_imx = "u-boot-dolphin"
-PREFERRED_PROVIDER_virtual/kernel_imx = "linux-imx"
+PREFERRED_PROVIDER_virtual/kernel_imx = "linux-dolphin"
 
 PREFERRED_VERSION_linux-libc-headers_imx ?= "5.4"
 
