@@ -34,6 +34,7 @@
   </project>
 
   <project name="Dolphin" path="uboot-imx-dolphin" remote="repository" revision="uboot-imx-dolphin"/>
+  <project name="Dolphin" path="linux-dolphin" remote="repository" revision="linux-dolphin"/>
 
   <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c7263d9f3cc7bbf44e7164ffeda494cf283d3dec" upstream="zeus-5.4.24-2.1.0"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"/>
