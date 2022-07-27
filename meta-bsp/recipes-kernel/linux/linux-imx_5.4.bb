@@ -12,12 +12,12 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "imx_5.4.47_2.2.0"
+SRCBRANCH = "default"
 LOCALVERSION = "-2.2.0"
-KERNEL_SRC ?= "git://source.codeaurora.org/external/imx/linux-imx.git;protocol=https"
+KERNEL_SRC ?= "git:////${BSPDIR}/linux-dolphin;protocol=file"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
-SRCREV = "5ec03d06f54e6728c973efccb7edf20d071e2096"
+SRCREV = "${AUTOREV}"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 

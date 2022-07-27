@@ -14,11 +14,11 @@ DEPENDS_append = " dtc-native"
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-UBOOT_SRC ?= "git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https"
-SRCBRANCH = "imx_v2020.04_5.4.47_2.2.0"
+UBOOT_SRC ?= "git:////${BSPDIR}/uboot-imx-dolphin;protocol=file"
+SRCBRANCH = "default"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "ffc3fbe7e5418d16f492c78693c3c4fa41f06f27"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
